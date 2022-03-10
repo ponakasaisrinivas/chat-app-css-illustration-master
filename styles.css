@@ -247,7 +247,7 @@ body {
   font-size: 1.1rem;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 576px) {
   .container {
     position: absolute;
     left: 20%;
