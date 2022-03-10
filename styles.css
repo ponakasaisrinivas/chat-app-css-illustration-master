@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: hsl(270, 20%, 96%);
+  font-family: "Rubik", sans-serif;
+  position: relative;
+}
+
+/* Background image start */
+
+.background {
+  position: absolute;
+  height: 85vh;
+  width: 550px;
+  background-image: linear-gradient(
+    45deg,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  border-radius: 0 0 50% 50%;
+  transform: translateX(calc(calc(350px - 13vw) * -1));
+}
+
+/* Background image end */
+
+/* whole container */
+
+.container {
+  width: 100vw;
+  display: flex;
+  /* background-color: aqua;
+  opacity: 0.5; */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  gap: 4rem;
+}
+
+.phoneOut {
+  height: 620px;
+  max-width: 300px;
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 30px;
+  border: 12px solid white;
+  box-shadow: 1px 10px 10px -15px black;
+  /* overflow: hidden; */
+  font-size: 0.65rem;
+}
+
+/* profile start */
+
+.profile {
+  padding: 20px;
+  padding-top: 30px;
+  border-radius: 15px 15px 7px 7px;
+  height: 75px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  color: white;
+  position: relative;
+}
+
+.notch {
+  position: absolute;
+  top: -2px;
+  left: 70px;
+  height: 20px;
+  width: 50%;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}
+
+.profile > h4 {
+  font-size: 0.9rem;
+  margin: 5px 0px 3px 50px;
+  font-weight: 500;
+}
+
+.price h4 {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 700;
+  margin-right: 5px;
+  margin-left: auto;
+}
+
+.profile p {
+  opacity: 0.5;
+  margin: 0px 0px 5px 50px;
+}
+
+.profile img {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.555);
+  float: left;
+  margin: 5px;
+}
+
+/* profile end */
+
+/* chat start */
+
+.left,
+.right {
+  padding: 10px;
+  width: 170px;
+  line-height: 0.8rem;
+}
+
+.left {
+  background-color: hsla(268, 7%, 64%, 0.185);
+  color: hsl(276, 55%, 52%);
+  font-weight: 500;
+  border-radius: 15px 15px 15px 5px;
+  margin: 10px;
+}
+
+.right {
+  background-color: white;
+  color: hsl(271, 15%, 43%);
+  font-weight: 500;
+  border-radius: 15px 15px 5px 15px;
+  margin: 10px 10px 10px auto;
+}
+
+.imageparent {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  margin: 20px 10px 0 auto;
+}
+.inimage {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+#finalchatleft {
+  margin-top: 20px;
+}
+
+/* chat start */
+
+/* price start */
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 40px;
+  width: 200px;
+  background-image: linear-gradient(
+    to left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px 15px 15px 5px;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.301);
+}
+
+.price p {
+  color: white;
+  opacity: 0.5;
+}
+
+/* price end */
+
+/* Chat box start */
+
+.chatbox {
+  height: 40px;
+  width: 260px;
+  margin: 10px auto;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatbox .circle {
+  background-color: hsl(271, 36%, 24%);
+  border: 0;
+  height: 25px;
+  width: 25px;
+  margin-right: 7px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatbox p {
+  margin-left: 30px;
+  opacity: 0.5;
+}
+
+.circle div {
+  height: 7px;
+  width: 7px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: translatex(-2px) rotate(45deg);
+}
+
+/* Chat box end */
+
+/* start of contet */
+.content {
+  text-align: center;
+}
+.content h1 {
+  color: hsl(271, 36%, 24%);
+  margin-bottom: 25px;
+  font-size: 2.6rem;
+}
+
+.content p {
+  width: 80%;
+  color: hsl(270, 7%, 64%);
+  margin: 0 auto 30px;
+  line-height: 2rem;
+  /* font-weight: 500; */
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    position: absolute;
+    left: 20%;
+    flex-direction: row;
+    max-width: 75vw;
+  }
+  .content {
+    text-align: left;
+    margin: 50px;
+  }
+  .content p {
+    margin: 0;
+    max-width: 600px;
+  }
+}
