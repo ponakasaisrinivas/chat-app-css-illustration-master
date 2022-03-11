@@ -103,13 +103,21 @@ body {
   margin: 0px 0px 5px 50px;
 }
 
-.profile img {
+.photo {
   height: 33px;
   width: 33px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.555);
   float: left;
   margin: 5px;
+}
+
+.arrow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 40px;
+  left: 5px;
 }
 
 /* profile end */
