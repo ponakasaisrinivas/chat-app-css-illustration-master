@@ -120,6 +120,14 @@ body {
   left: 5px;
 }
 
+.seemore {
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  top: 41px;
+  right: 5px;
+}
+
 /* profile end */
 
 /* chat start */
